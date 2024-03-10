@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://xmetp51wrrv3"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_esqdu"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_esqdu")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 347.0
+offset_top = 250.0
+offset_right = 524.0
+offset_bottom = 402.0
+text = "PLAY
+"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 649.0
+offset_top = 250.0
+offset_right = 862.0
+offset_bottom = 408.0
+tooltip_text = "Exit To Desktop"
+text = "EXIT
+"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_button_2_pressed"]
